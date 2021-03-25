@@ -28,15 +28,15 @@ public class LoginPageTest extends BaseTest{
 		loginPage = new LoginPage();
 	}
 	
-	@DataProvider
+	@DataProvider(name = "data")
 	public Object[][] getCRMTestData() throws InvalidFormatException{
 		Object data[][] = TestUtil.getTestData(sheetName);
 		return data;
 	}
 	
 	
-	@Test(priority=1, dataProvider="getCRMTestData")
-	 public void loginTest(Map<Object, Object> map) {
+	@Test(dataProvider = "data")
+	 public void loginTest(Map<Object,Object> map) {
 		 loginPage.login(map.get("Username").toString(), map.get("Password").toString());
 	 }
 	 

@@ -39,12 +39,13 @@ public class TestUtil extends BaseTest{
 			e.printStackTrace();
 		}
 		sheet = book.getSheet(sheetName);
-		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+		//Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+	    Object[][] data = new Object[sheet.getLastRowNum()][1];
 		Cell cell;
 		// System.out.println(sheet.getLastRowNum() + "--------" +
 		// sheet.getRow(0).getLastCellNum());
 		int j=0;
-		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
 			Map<Object, Object> datamap = new HashMap<>();
 
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
@@ -69,3 +70,4 @@ public class TestUtil extends BaseTest{
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
 }
+
