@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-25T18:45:19 IST" name="CRM Automation Test Suite" finished-at="2021-03-25T18:45:41 IST" duration-ms="22026">
+  <suite name="Default suite" duration-ms="22590" started-at="2021-03-30T12:42:55 IST" finished-at="2021-03-30T12:43:17 IST">
     <groups>
     </groups>
-    <test started-at="2021-03-25T18:45:19 IST" name="CRM Test Cases" finished-at="2021-03-25T18:45:41 IST" duration-ms="22026">
+    <test name="Default test" duration-ms="22590" started-at="2021-03-30T12:42:55 IST" finished-at="2021-03-30T12:43:17 IST">
       <class name="com.crm.qa.testCases.LoginPageTest">
-        <test-method is-config="true" signature="launch()[pri:0, instance:com.crm.qa.testCases.LoginPageTest@2e222612]" started-at="2021-03-25T18:45:20 IST" name="launch" finished-at="2021-03-25T18:45:39 IST" duration-ms="19576" status="PASS">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.crm.qa.testCases.LoginPageTest@17d677df]" name="launch" is-config="true" duration-ms="19319" started-at="2021-03-30T12:42:57 IST" finished-at="2021-03-30T12:43:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method signature="loginTest(java.util.Map)[pri:0, instance:com.crm.qa.testCases.LoginPageTest@2e222612]" started-at="2021-03-25T18:45:39 IST" name="loginTest" data-provider="data" finished-at="2021-03-25T18:45:40 IST" duration-ms="577" status="PASS">
+        <test-method status="PASS" signature="loginTest(java.util.Map)[pri:0, instance:com.crm.qa.testCases.LoginPageTest@17d677df]" name="loginTest" duration-ms="439" started-at="2021-03-30T12:43:16 IST" data-provider="data" finished-at="2021-03-30T12:43:16 IST">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.crm.qa.testCases.LoginPageTest@2e222612]" started-at="2021-03-25T18:45:40 IST" name="tearDown" finished-at="2021-03-25T18:45:41 IST" duration-ms="992" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testCases.LoginPageTest@17d677df]" name="tearDown" is-config="true" duration-ms="892" started-at="2021-03-30T12:43:16 IST" finished-at="2021-03-30T12:43:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.crm.qa.testCases.LoginPageTest -->
-    </test> <!-- CRM Test Cases -->
-  </suite> <!-- CRM Automation Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
