@@ -1,10 +1,13 @@
 package com.crm.qa.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.crm.qa.base.BaseTest;
+import com.crm.qa.util.TestUtil;
 
 public class LoginPage extends BaseTest{
 	@FindBy(name="email")
@@ -20,6 +23,9 @@ public class LoginPage extends BaseTest{
 		PageFactory.initElements(driver, this);
 	}
 	
+	public boolean verifyLoginPage() {
+		return username.isDisplayed();
+	}
 	public HomePage login(String user,String password) {
 		username.sendKeys(user);
 		pwd.sendKeys(password);

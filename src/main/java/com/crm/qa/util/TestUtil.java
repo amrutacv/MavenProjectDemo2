@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
 import org.openqa.selenium.TakesScreenshot;
 import org.openxml4j.exceptions.InvalidFormatException;
 import org.apache.commons.io.FileUtils;
@@ -19,12 +18,12 @@ import org.openqa.selenium.OutputType;
 import com.crm.qa.base.BaseTest;
 
 public class TestUtil extends BaseTest{
-	public static final long pageLoadTimeOut = 20;
-	public static final long implicitlyWait = 10;
+	public static final long pageLoadTimeOut = 30;
+	public static final long implicitlyWait = 20;
 	public static String TESTDATA_SHEET_PATH = "C:\\Users\\AcVyawahare\\eclipse-workspace\\MavenProject2\\src\\main\\java\\com\\crm\\qa\\testData\\CRM_TestData.xlsx";
 
-	static Workbook book;
-	static Sheet sheet;
+	public static Workbook book;
+	public static Sheet sheet;
 	
 	public static Object[][] getTestData(String sheetName) throws InvalidFormatException {
 		FileInputStream file = null;

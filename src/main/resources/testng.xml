@@ -7,6 +7,7 @@
  	<test name="CRM Test Cases">
     	<classes>
       		<class name="com.crm.qa.testCases.LoginPageTest"/>
+      		<class name="com.crm.qa.testCases.ContactsPageTest"/>
     	</classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->
