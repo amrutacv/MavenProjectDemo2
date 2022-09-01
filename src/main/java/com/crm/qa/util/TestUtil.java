@@ -20,7 +20,7 @@ import com.crm.qa.base.BaseTest;
 public class TestUtil extends BaseTest{
 	public static final long pageLoadTimeOut = 30;
 	public static final long implicitlyWait = 20;
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\AcVyawahare\\eclipse-workspace\\MavenProject2\\src\\main\\java\\com\\crm\\qa\\testData\\CRM_TestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "src\\main\\java\\com\\crm\\qa\\testData\\CRM_TestData.xlsx";
 
 	public static Workbook book;
 	public static Sheet sheet;

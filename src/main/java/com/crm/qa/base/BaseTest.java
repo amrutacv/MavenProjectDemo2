@@ -17,7 +17,7 @@ public class BaseTest {
 	public BaseTest() {
 		prop = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("C:\\Users\\AcVyawahare\\eclipse-workspace\\MavenProject2\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
