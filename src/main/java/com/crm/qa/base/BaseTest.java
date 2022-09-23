@@ -28,15 +28,28 @@ public class BaseTest {
 		}
 	}
 	public static void initialize() {
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("start-maximized");
-		options.addArguments("enable-automation");
-		driver = new ChromeDriver(options);
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.pageLoadTimeOut, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.implicitlyWait, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("url"));
+		if(System.getProperty("browser").toUpperCase().equals("CHROME")) {
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized");
+			options.addArguments("enable-automation");
+			driver = new ChromeDriver(options);
+			driver.manage().deleteAllCookies();
+			driver.manage().timeouts().pageLoadTimeout(TestUtil.pageLoadTimeOut, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(TestUtil.implicitlyWait, TimeUnit.SECONDS);
+			driver.get(prop.getProperty("url"));
+		}
+		else {
+			WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("start-maximized");
+			options.addArguments("enable-automation");
+			driver = new ChromeDriver(options);
+			driver.manage().deleteAllCookies();
+			driver.manage().timeouts().pageLoadTimeout(TestUtil.pageLoadTimeOut, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(TestUtil.implicitlyWait, TimeUnit.SECONDS);
+			driver.get(prop.getProperty("url"));
+		}
 		
 	}
 }

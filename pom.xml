@@ -90,7 +90,7 @@
 				<version>3.0.0-M6</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+						<suiteXmlFile>${project.basedir}/${suiteXmlFilePath}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
      	 	</plugin>

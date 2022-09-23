@@ -10,7 +10,7 @@ public class LandingPage extends BaseTest{
 	@FindBy(xpath="//a[@class='btn btn-primary btn-xs-2 btn-shadow btn-rect btn-icon btn-icon-left']")
 	WebElement login;
 	
-	@FindBy(xpath="//a[@title='free crm home']")
+	@FindBy(xpath="//img[@alt='free crm home']")
 	WebElement logo;
 	
 	public LandingPage() {
