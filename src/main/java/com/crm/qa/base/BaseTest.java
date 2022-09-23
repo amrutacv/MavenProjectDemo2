@@ -28,6 +28,7 @@ public class BaseTest {
 		}
 	}
 	public static void initialize() {
+//		System.setProperty("browser", "chrome");
 		if(System.getProperty("browser").toUpperCase().equals("CHROME")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
